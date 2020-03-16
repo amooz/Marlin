@@ -367,8 +367,8 @@
  *
  * Define one or both of these to override the default 0-255 range.
  */
-#define FAN_MIN_PWM 30
-#define FAN_MAX_PWM 128
+#define FAN_MIN_PWM 0
+#define FAN_MAX_PWM 127
 
 /**
  * FAST PWM FAN Settings
@@ -647,7 +647,7 @@
    * V3.1: Force a probe with unknown mode into selected mode at Marlin startup ( = Probe EEPROM write )
    * To preserve the life of the probe, use this once then turn it off and re-flash.
    */
-  #define BLTOUCH_FORCE_MODE_SET
+  //#define BLTOUCH_FORCE_MODE_SET
 
   /**
    * Use "HIGH SPEED" mode for probing.
