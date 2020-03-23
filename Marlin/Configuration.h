@@ -484,9 +484,9 @@
 
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
   // Creality Ender-5
-  #define DEFAULT_Kp 37.14
-  #define DEFAULT_Ki 4.72
-  #define DEFAULT_Kd 73.02
+  #define DEFAULT_Kp 35.86
+  #define DEFAULT_Ki 4.52
+  #define DEFAULT_Kd 71.16
 
   // Ultimaker
   //#define DEFAULT_Kp 22.2
@@ -552,9 +552,9 @@
 
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
-  #define DEFAULT_bedKp 130.25
-  #define DEFAULT_bedKi 25.64
-  #define DEFAULT_bedKd 441.03
+  #define DEFAULT_bedKp 210.98
+  #define DEFAULT_bedKi 39.88
+  #define DEFAULT_bedKd 744.20
 #endif // PIDTEMPBED
 
 // @section extruder
@@ -698,7 +698,7 @@
 
 // Enable this feature if all enabled endstop pins are interrupt-capable.
 // This will remove the need to poll the interrupt pins, saving many CPU cycles.
-//#define ENDSTOP_INTERRUPTS_FEATURE
+#define ENDSTOP_INTERRUPTS_FEATURE
 
 /**
  * Endstop Noise Threshold
@@ -969,7 +969,7 @@
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
-#define MIN_PROBE_EDGE 10
+#define MIN_PROBE_EDGE 7
 
 // X and Y axis travel speed (mm/m) between probes
 #define XY_PROBE_SPEED 8000
@@ -1006,9 +1006,9 @@
  * Example: `M851 Z-5` with a CLEARANCE of 4  =>  9mm from bed to nozzle.
  *     But: `M851 Z+1` with a CLEARANCE of 2  =>  2mm from bed to nozzle.
  */
-#define Z_CLEARANCE_DEPLOY_PROBE   10 // Z Clearance for Deploy/Stow
-#define Z_CLEARANCE_BETWEEN_PROBES  5 // Z Clearance between probe points
-#define Z_CLEARANCE_MULTI_PROBE     5 // Z Clearance between multiple probes
+#define Z_CLEARANCE_DEPLOY_PROBE   7 // Z Clearance for Deploy/Stow
+#define Z_CLEARANCE_BETWEEN_PROBES  7 // Z Clearance between probe points
+#define Z_CLEARANCE_MULTI_PROBE     7 // Z Clearance between multiple probes
 //#define Z_AFTER_PROBING           5 // Z position after probing is done
 
 #define Z_PROBE_LOW_POINT          -2 // Farthest distance below the trigger-point to go before stopping
@@ -1018,7 +1018,7 @@
 #define Z_PROBE_OFFSET_RANGE_MAX 20
 
 // Enable the M48 repeatability test to test probe accuracy
-//#define Z_MIN_PROBE_REPEATABILITY_TEST
+#define Z_MIN_PROBE_REPEATABILITY_TEST
 
 // Before deploy/stow pause for user confirmation
 //#define PAUSE_BEFORE_DEPLOY_STOW
@@ -1037,7 +1037,7 @@
 #if ENABLED(PROBING_HEATERS_OFF)
   //#define WAIT_FOR_BED_HEATER     // Wait for bed to heat back up between probes (to improve accuracy)
 #endif
-//#define PROBING_FANS_OFF          // Turn fans off when probing
+#define PROBING_FANS_OFF          // Turn fans off when probing
 //#define PROBING_STEPPERS_OFF      // Turn steppers off (unless needed to hold position) when probing
 //#define DELAY_BEFORE_PROBING 200  // (ms) To prevent vibrations from triggering piezo sensors
 
@@ -1126,7 +1126,7 @@
 #if ENABLED(MIN_SOFTWARE_ENDSTOPS)
   #define MIN_SOFTWARE_ENDSTOP_X
   #define MIN_SOFTWARE_ENDSTOP_Y
-  #define MIN_SOFTWARE_ENDSTOP_Z
+  // #define MIN_SOFTWARE_ENDSTOP_Z
 #endif
 
 // Max software endstops constrain movement within maximum coordinate bounds
@@ -1138,7 +1138,7 @@
 #endif
 
 #if EITHER(MIN_SOFTWARE_ENDSTOPS, MAX_SOFTWARE_ENDSTOPS)
-  //#define SOFT_ENDSTOPS_MENU_ITEM  // Enable/Disable software endstops from the LCD
+  #define SOFT_ENDSTOPS_MENU_ITEM  // Enable/Disable software endstops from the LCD
 #endif
 
 /**
@@ -1373,8 +1373,8 @@
 #endif
 
 // Homing speeds (mm/m)
-#define HOMING_FEEDRATE_XY (20*60)
-#define HOMING_FEEDRATE_Z  (4*60)
+#define HOMING_FEEDRATE_XY (50*60)
+#define HOMING_FEEDRATE_Z  (10*60)
 
 // Validate that endstops are triggered on homing moves
 #define VALIDATE_HOMING_ENDSTOPS
