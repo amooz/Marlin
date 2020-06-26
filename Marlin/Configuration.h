@@ -485,9 +485,9 @@
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
 
   // SK-Go
-  #define DEFAULT_Kp 19.56
-  #define DEFAULT_Ki 1.85
-  #define DEFAULT_Kd 51.73
+  #define DEFAULT_Kp 26.00
+  #define DEFAULT_Ki 2.45
+  #define DEFAULT_Kd 69.69
 
   // MakerGear
   //#define DEFAULT_Kp 7.0
@@ -957,11 +957,11 @@
  *
  * Specify a Probe position as { X, Y, Z }
  */
-#define NOZZLE_TO_PROBE_OFFSET { -2.7, 59, -3.50 }
+#define NOZZLE_TO_PROBE_OFFSET { -2.7, 59, -3.60 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
-#define MIN_PROBE_EDGE 10
+#define MIN_PROBE_EDGE 5
 
 // X and Y axis travel speed (mm/m) between probes
 #define XY_PROBE_SPEED 6000
@@ -1284,8 +1284,8 @@
 
   #define MESH_EDIT_GFX_OVERLAY   // Display a graphics overlay while editing the mesh
 
-  #define MESH_INSET 10              // Set Mesh bounds as an inset region of the bed
-  #define GRID_MAX_POINTS_X 10      // Don't use more than 15 points per axis, implementation limited.
+  #define MESH_INSET 5              // Set Mesh bounds as an inset region of the bed
+  #define GRID_MAX_POINTS_X 12      // Don't use more than 15 points per axis, implementation limited.
   #define GRID_MAX_POINTS_Y GRID_MAX_POINTS_X
 
   #define UBL_MESH_EDIT_MOVES_Z     // Sophisticated users prefer no movement of nozzle
