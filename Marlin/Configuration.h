@@ -484,9 +484,9 @@
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
 
   // SK-Go
-  #define DEFAULT_Kp 51.34
-  #define DEFAULT_Ki 7.47
-  #define DEFAULT_Kd 88.20
+  #define DEFAULT_Kp 28.81
+  #define DEFAULT_Ki 2.39
+  #define DEFAULT_Kd 86.90
 
   // MakerGear
   //#define DEFAULT_Kp 7.0
