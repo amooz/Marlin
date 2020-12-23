@@ -28,7 +28,7 @@
 /**
  * Marlin release version identifier
  */
-#define SHORT_BUILD_VERSION "@amooz (Github) 2.0.7.2"
+#define SHORT_BUILD_VERSION "2.0.7.2 (@amooz)"
 
 /**
  * Verbose version identifier which should contain a reference to the location
@@ -41,12 +41,12 @@
  * here we define this default string as the date where the latest release
  * version was tagged.
  */
-#define STRING_DISTRIBUTION_DATE "2020-10-13"
+#define STRING_DISTRIBUTION_DATE "2021-01-02"
 
 /**
  * Defines a generic printer name to be output to the LCD after booting Marlin.
  */
-#define MACHINE_NAME "SecKit-GO 350"
+#define MACHINE_NAME "SecKit-GO"
 
 /**
  * The SOURCE_CODE_URL is the location where users will find the Marlin Source
