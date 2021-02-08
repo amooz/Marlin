@@ -28,7 +28,7 @@
 /**
  * Marlin release version identifier
  */
-#define SHORT_BUILD_VERSION "2.0.7.2 (@amooz v2)"
+#define SHORT_BUILD_VERSION "2.0.7.2 (@amooz v2.1)"
 
 /**
  * Verbose version identifier which should contain a reference to the location
@@ -41,7 +41,7 @@
  * here we define this default string as the date where the latest release
  * version was tagged.
  */
-#define STRING_DISTRIBUTION_DATE "2021-01-19"
+#define STRING_DISTRIBUTION_DATE "2021-02-08"
 
 /**
  * Defines a generic printer name to be output to the LCD after booting Marlin.
@@ -59,13 +59,13 @@
 /**
  * Default generic printer UUID.
  */
- #define DEFAULT_MACHINE_UUID "0bb2f7ba-cb56-4f5c-af40-64e59e665964"
+#define DEFAULT_MACHINE_UUID "0bb2f7ba-cb56-4f5c-af40-64e59e665964"
 
 /**
  * The WEBSITE_URL is the location where users can get more information such as
  * documentation about a specific Marlin release.
  */
- #define WEBSITE_URL "http://marlinfw.org"
+#define WEBSITE_URL "http://marlinfw.org"
 
 /**
  * Set the vendor info the serial USB interface, if changable
